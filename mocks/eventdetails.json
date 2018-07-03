@@ -1,0 +1,53 @@
+[{
+	"event_id":"100",
+	"event_name":"EVENT",
+	"start_date":"07/02/2018",
+	"end_date":"07/05/2018",
+	"event_description":"Reactathon for Verizon",
+	"technologies":"React JS,Node JS",
+	"problem_statements":["Statement_1","Statement_2"],
+	"attachments":["att1.jpeg","att2.jpeg"],
+	"event_type": "hackathon",
+	"event_link": "",
+	"judge":["mahesh@verizon.com","vinay@verizon.com"]
+},
+{
+	"event_id":"101",
+	"event_name":"EVENT1",
+	"start_date":"08/02/2018",
+	"end_date":"08/05/2018",
+	"event_description":"Hackathon 1",
+	"technologies":"React JS,Node JS",
+	"problem_statements":["Statement_1","Statement_2"],
+	"attachments":["att1.jpeg","att2.jpeg"],
+	"event_type": "hackathon",
+	"event_link": "",
+	"judge":[]
+},
+{
+	"event_id":"102",
+	"event_name":"EVENT2",
+	"start_date":"09/02/2018",
+	"end_date":"09/05/2018",
+	"event_description":"Hackathon 2",
+	"technologies":"React JS,Node JS",
+	"problem_statements":["Statement_1","Statement_2"],
+	"attachments":["att1.jpeg","att2.jpeg"],
+	"event_type": "hackathon",
+	"event_link": "",
+	"judge":[]
+},
+{
+	"event_id":"103",
+	"event_name":"EVENT3",
+	"start_date":"12/02/2018",
+	"end_date":"12/05/2018",
+	"event_description":"Diversity Premier League",
+	"technologies":"",
+	"problem_statements":[],
+	"attachments":["att1.jpeg","att2.jpeg"],
+	"event_type": "fun",
+	"event_link": "",
+	"judge":[]
+}
+]

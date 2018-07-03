@@ -1,0 +1,45 @@
+[{
+	"user_id":"v99999",
+	"name":"Mahesh P",
+	"email_id":"mahesh@verizon.com",
+	"supervisor_email":"manoj@verizon.com",
+	"phone_1":"9999999991",
+	"phone_2":"9999999990",
+	"portfolio":"NTIT",
+	"isAdmin":"FALSE",
+	"isJudge":"FALSE"
+},
+{
+	"user_id":"v99998",
+	"name":"Vamshidhar",
+	"email_id":"vamshidhar.x.maduri@verizon.com",
+	"supervisor_email":"chid@verizon.com",
+	"phone_1":"9999999991",
+	"phone_2":"9999999990",
+	"portfolio":"NTIT",
+	"isAdmin":"FALSE",
+	"isJudge":"FALSE"
+},
+{
+	"user_id":"v99997",
+	"name":"Bhargav",
+	"email_id":"Bhargav@verizon.com",
+	"supervisor_email":"sai.g@verizon.com",
+	"phone_1":"9999999991",
+	"phone_2":"9999999990",
+	"portfolio":"NTIT",
+	"isAdmin":"TRUE",
+	"isJudge":"TRUE"
+},
+{
+	"user_id":"v99996",
+	"name":"Vinay C",
+	"email_id":"vinay@verizon.com",
+	"supervisor_email":"sai.g@verizon.com",
+	"phone_1":"9999999991",
+	"phone_2":"9999999990",
+	"portfolio":"NTIT",
+	"isAdmin":"FALSE",
+	"isJudge":"TRUE"
+}
+]

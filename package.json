@@ -1,0 +1,23 @@
+{
+	"name": "node_service",
+	"version": "8.11.3",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"async": "^2.0.0-rc.5",
+		"bluebird": "^2.9.2",
+		"body-parser": "^1.15.0",
+		"config": "^1.20.1",
+		"connect": "^3.6.6",
+		"constants": "0.0.2",
+		"express": "^4.13.4",
+		"express-winston": "^1.4.2",
+		"http": "0.0.0",
+		"lodash": "^4.11.1",
+		"lodash.delay": "^4.1.1",
+		"mongodb": "^3.1.0",
+		"node-rest-client": "^2.0.1",
+		"util": "^0.11.0"
+	}
+}

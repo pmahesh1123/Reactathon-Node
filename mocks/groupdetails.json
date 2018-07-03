@@ -1,0 +1,33 @@
+[{
+	"event_id":"100",
+	"group_name":"Mahesh_Packers",
+	"participants":["mahesh@verizon.com","vamshidhar.x.maduri@verizon.com"],
+	"group_score":"manoj@verizon.com",
+	"group_rank":"",
+	"result":""
+},
+{
+	"event_id":"100",
+	"group_name":"Bhargav_Cracker",
+	"participants":["bhargav@verizon.com","vinay@verizon.com"],
+	"group_score":"manoj@verizon.com",
+	"group_rank":"",
+	"result":""
+},
+{
+	"event_id":"100",
+	"group_name":"Group2",
+	"participants":["mahesh@verizon.com","vamshidhar.x.maduri@verizon.com"],
+	"group_score":"manoj@verizon.com",
+	"group_rank":"",
+	"result":""
+},
+{
+	"event_id":"100",
+	"group_name":"Group3",
+	"participants":["mahesh@verizon.com","vamshidhar.x.maduri@verizon.com"],
+	"group_score":"manoj@verizon.com",
+	"group_rank":"",
+	"result":""
+}
+]
