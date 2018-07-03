@@ -24,7 +24,7 @@ module.exports = {
 		let database = mongoUtil.getConnection().db("VZHackathon")
 
 		  let myquery = { result: "", group_rank: "" , group_score:""};
-		  let newvalues = { $set: {event_id: "100", result: "won", group_rank: "1",, group_score:"78" } };
+		  let newvalues = { $set: {event_id: "100", result: "won", group_rank: "1", group_score:"78" } };
 		  database.collection("groupdetails").updateOne(myquery, newvalues, function(err, res) {
 		    if (err) throw err;
 		  });
@@ -39,7 +39,7 @@ module.exports = {
 		    if (err) throw err;
 		});
 
-	} 
+	}, 
 	addGroup: function(req, res, next) {
 		let database = mongoUtil.getConnection().db("VZHackathon")
 
