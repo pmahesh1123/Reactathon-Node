@@ -18,7 +18,7 @@ module.exports = {
 	},
 	getPastEvents: function(req, res, next) {
 		let database = mongoUtil.getConnection().db("VZHackathon")
-		console.log(currentDate);
+		
 		database.collection('eventdetails').find({start_date:{$lt:currentDate}}).toArray(function(err, result) {
 			return util.sendJson(res, result)
 		})
@@ -48,8 +48,8 @@ module.exports = {
 	addEvent: function(req, res, next) {
 		let database = mongoUtil.getConnection().db("VZHackathon")
 
-		let newObj = {event_id:"",event_name:"",start_date:"",end_date:"",event_description:"",technologies:"",problem_statements:["Statement_1","Statement_2"],
-							attachments:["att1.jpeg","att2.jpeg"],	event_type: "hackathon",	event_link: "",	judge:[] }
+		let newObj = {event_id: req.body['event_id'],event_name: req.body['event_name'],start_date: req.body['start_date'],end_date: req.body['end_date'],event_description: req.body['event_description'],technologies: req.body['technologies'],problem_statements:["Statement_1","Statement_2"],
+							attachments:["att1.jpeg","att2.jpeg"],	event_type: req.body['event_type'],	event_link: "",	judge: req.body['judge'] }
 
 		database.collection("eventdetails").insertOne(newObj, function(err, data) {
 		    if (err) throw err;
