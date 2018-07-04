@@ -17,6 +17,7 @@
 		"lodash": "^4.11.1",
 		"lodash.delay": "^4.1.1",
 		"method-override": "^2.3.10",
+		"moment": "^2.22.2",
 		"mongodb": "^3.1.0",
 		"node-rest-client": "^2.0.1",
 		"util": "^0.11.0"

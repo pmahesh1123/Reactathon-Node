@@ -3,13 +3,26 @@ const userDetails = require('../mocks/userdetails.json')
 const eventDetails = require('../mocks/eventdetails.json')
 const groupDetails = require('../mocks/groupdetails.json')
 const mongoUtil = require('../util/mongoUtil')
-
+var moment = require('moment')
+let currentDate = moment().format('MM-DD-YYYY');
 module.exports = {
 	getUserDetails : function(req, res, next) {
 		return util.sendJson(res, userDetails)
 	},
-	getEventDetails: function(req, res, next) {
-		return util.sendJson(res, eventDetails)
+	getUpcomingEvents: function(req, res, next) {
+		let database = mongoUtil.getConnection().db("VZHackathon")
+		database.collection('eventdetails').find({start_date:{$gte:currentDate}}).toArray(function(err, result) {
+			return util.sendJson(res, result)
+		})
+		
+	},
+	getPastEvents: function(req, res, next) {
+		let database = mongoUtil.getConnection().db("VZHackathon")
+		console.log(currentDate);
+		database.collection('eventdetails').find({start_date:{$lt:currentDate}}).toArray(function(err, result) {
+			return util.sendJson(res, result)
+		})
+		
 	},
 	getGroupDetails: function(req, res, next) {
 		return util.sendJson(res, groupDetails)
@@ -24,11 +37,12 @@ module.exports = {
 	},
 	updateGroupDetails : function(req, res, next) {
 		let database = mongoUtil.getConnection().db("VZHackathon")
-
-		  let myquery = { result: "", group_rank: "" , group_score:""};
-		  let newvalues = { $set: {group_name: "100", result: "won", group_rank: "1", group_score:"78" } };
-		  database.collection("groupdetails").updateOne(myquery, newvalues, function(err, res) {
-		    if (err) throw err;
+			console.log(req.body);
+		  let myquery = { result: "", group_score:""};
+		  let newvalues = { $set: {group_name: req.body["group_name"], result: req.body["end_result"], group_score:req.body.score } };
+		  database.collection("groupdetails").updateOne(myquery, newvalues, function(err, result) {
+		    if (err) res.send({type:'error', message:err});
+		    res.send({type:'Success',message:'Group updated successfully with scores'})
 		  });
 	},
 	addEvent: function(req, res, next) {
