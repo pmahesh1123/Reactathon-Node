@@ -8,7 +8,7 @@ process.argv.forEach(function(val, index,array) {
 module.exports= {
 
 	sendJson : function(res, data) {
-		res.setHeader('Content-Type','application/json')
+		// res.setHeader('Content-Type','application/json')
 		if(useDelay){
 			delay(() => res.send(JSON.stringify(data)), Math.random()*300)
 		}

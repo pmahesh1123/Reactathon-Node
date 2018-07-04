@@ -14,8 +14,8 @@ router.get('/groups', function(req, res, next){
 	controller.getGroupDetails(req,res,next)
 })
 
-router.get('/checkConn', function(req, res, next){
-	controller.checkConnection(req,res,next)
+router.get('/group/:id', function(req, res, next){
+	controller.getGroupByEventID(req,res,next)
 })
 
 router.get('/updateGroup', function(req, res, next){
@@ -26,7 +26,7 @@ router.get('/addEvent', function(req, res, next){
 	controller.addEvent(req,res,next)
 })
 
-router.get('/addGroup', function(req, res, next){
+router.post('/addGroup', function(req, res, next){
 	controller.addGroup(req,res,next)
 })
 
